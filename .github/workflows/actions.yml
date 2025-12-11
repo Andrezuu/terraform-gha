@@ -1,7 +1,10 @@
 name: Terraform Deploy Manual
 
 on:
-  push: [master]
+  push: 
+    branches:
+      - main
+
   workflow_dispatch:
     inputs:
       ejecutar:
